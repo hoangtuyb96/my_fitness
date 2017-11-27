@@ -34,4 +34,8 @@ class User extends Authenticatable
     public function my_programs(){
         return $this->hasMany('App\MyProgram', 'user_id', 'id');
     }
+
+    public function following_program(){
+        return $this->hasManyThrough('App\Program', 'App\MyProgram', 'user_id', 'id', 'id', 'program_id');;
+    }
 }
