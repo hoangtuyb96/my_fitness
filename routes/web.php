@@ -30,3 +30,6 @@ Route::get('test1', function() {
     echo $key->fullname.'<br>';
   }
 });
+
+Route::get('login', 'UsersController@getLogin');
+Route::post('login', 'UsersController@postLogin');
