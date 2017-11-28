@@ -14,7 +14,7 @@ use App\User;
 use App\Program;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('test', function() {
@@ -33,3 +33,6 @@ Route::get('test1', function() {
 
 Route::get('login', 'UsersController@getLogin');
 Route::post('login', 'UsersController@postLogin');
+Route::get('signup', 'UsersController@getSignup');
+Route::post('signup', 'UsersController@postSignup');
+Route::get('logout', 'UsersController@logout');
