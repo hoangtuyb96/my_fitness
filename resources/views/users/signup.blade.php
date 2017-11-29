@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Signup</title>
-   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+@extends('layout')
 
-  <link rel="stylesheet" href="{{asset('css/users.css')}}">
+@section('title')
+  Signup
+@endsection
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+@section('content')
+<div class="div-1">
 <div class="container">
 
   <div class="row">
@@ -75,11 +67,11 @@
         <hr class="colorgraph">
         <div class="row">
           <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
-          <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+          <div class="col-xs-12 col-md-6"><a href="{{'login'}}" class="btn btn-success btn-block btn-lg">Login</a></div>
         </div>
       </form>
     </div>
   </div>
 </div>
-</body>
-</html>
+</div>
+@endsection
