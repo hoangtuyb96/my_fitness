@@ -36,3 +36,5 @@ Route::post('login', 'UsersController@postLogin');
 Route::get('signup', 'UsersController@getSignup');
 Route::post('signup', 'UsersController@postSignup');
 Route::get('logout', 'UsersController@logout');
+Route::get('{username}/profile', 'UsersController@profile');
+Route::post('{username}/profile', 'UsersController@postUpdate');

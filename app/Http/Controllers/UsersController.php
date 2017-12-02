@@ -57,4 +57,23 @@ class UsersController extends Controller
       Auth::logout();
       return redirect('');
     }
+
+    function profile($username){
+      $user = User::where('username', $username)->first();
+      return view('users.profile')->with('user',$user);
+    }
+
+    function postUpdate(Request $request, $username){
+      $user = User::where('username', $username)->first();
+      $user->fullname = $request->fullname;
+      $user->birthday = $request->birthday;
+      $user->weight = $request->weight;
+      $user->height = $request->height;
+      $user->job = $request->job;
+      $user->address = $request->address;
+      $user->purpose = $request->purpose;
+      $user->save();
+
+      return redirect()->back()->with('alert', 'Update profile successfully.');
+    }
 }
