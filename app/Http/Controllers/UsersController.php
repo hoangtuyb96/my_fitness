@@ -21,7 +21,7 @@ class UsersController extends Controller
       if(Auth::attempt(['username'=>$request->username,
         'password'=>$request->password]))
       {
-        return redirect('');
+        return redirect("/{$request->username}/my_page");
       }
       else
       {
@@ -75,5 +75,14 @@ class UsersController extends Controller
       $user->save();
 
       return redirect()->back()->with('alert', 'Update profile successfully.');
+    }
+
+    function getMyPage($username){
+      $user = User::where('username', $username)->first();
+      $following_program = $user->following_program;
+      return view('users.my_page')->with([
+        'following_program' => $following_program,
+        'user' => $user
+      ]);
     }
 }
