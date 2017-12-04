@@ -8,6 +8,7 @@
           <li><a href="#">Contact</a></li>
           @if(Auth::check())
             <li><a href="/{{Auth::user()->username}}/profile">{{Auth::user()->fullname}}</a></li>
+            <li><a href="/{{Auth::user()->username}}/my_page">My Page</a></li>
             <li><a href="/{{'logout'}}">Logout</a></li>
             <!-- <li class="has-dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Auth::user()->fullname}} <span class="caret"></span></a>
