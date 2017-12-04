@@ -39,3 +39,4 @@ Route::get('logout', 'UsersController@logout');
 Route::get('{username}/profile', 'UsersController@profile');
 Route::post('{username}/profile', 'UsersController@postUpdate');
 Route::get('{username}/my_page', 'UsersController@getMyPage');
+Route::post('search', 'SearchController@postSearch');
