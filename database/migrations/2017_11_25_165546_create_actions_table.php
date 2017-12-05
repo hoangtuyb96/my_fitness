@@ -17,8 +17,8 @@ class CreateActionsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('schedule_id');
-            $table->time('time');
-            $table->time('during_time');
+            $table->string('time');
+            $table->string('during_time');
             $table->timestamps();
         });
     }
