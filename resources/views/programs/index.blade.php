@@ -15,7 +15,7 @@
     <div class="row">
       @for ($i=0; $i<$programs->count(); $i++)
       <div class="col-md-4 animate-box">
-        <a href="#" class="item-grid text-center">
+        <a href="/programs/{{$programs->get($i)->id}}" class="item-grid text-center">
           <div class="image" style="background-image: url({{$programs->get($i)->images}})"></div>
           <div class="v-align">
             <div class="v-align-middle">

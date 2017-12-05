@@ -59,3 +59,41 @@
 .search-query:focus + button {
     z-index: 3;
 }
+
+.table {
+  margin-bottom: 0px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.table a {
+  color: #ffffff;
+}
+
+.table > tbody > tr > td {
+  padding: 15px;
+  border: 3px solid #e4e4e4;
+}
+
+.table tr > td {
+  padding: 11px 13px;
+}
+
+.me-image {
+  width: 720px;
+  height: 500px;
+}
+
+.custom-padding {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.custom-padding-1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.custom-padding-2 {
+  padding-bottom: 50px;
+}
