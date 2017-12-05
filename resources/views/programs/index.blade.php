@@ -27,6 +27,9 @@
       </div>
       @endfor
     </div>
+      <center>{{ $programs->links() }}
+      </center>
+      
   </div>
 </div>
 @endsection
