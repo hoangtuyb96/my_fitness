@@ -8,7 +8,7 @@ use App\Program;
 class ProgramsController extends Controller
 {
     function index(){
-      $programs = Program::simplePaginate(5);
+      $programs = Program::paginate(5);
       return view('programs.index')->with('programs', $programs);
     }
 
