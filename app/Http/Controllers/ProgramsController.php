@@ -11,4 +11,13 @@ class ProgramsController extends Controller
       $programs = Program::all()->take(20);
       return view('programs.index')->with('programs', $programs);
     }
+
+    function show($id){
+      $program = Program::find($id);
+      $user = $program->user;
+      return view('programs.show')->with([
+        'program' => $program,
+        'user' => $user
+      ]);
+    }
 }
