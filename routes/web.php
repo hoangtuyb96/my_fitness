@@ -14,7 +14,8 @@ use App\User;
 use App\Program;
 
 Route::get('/', function () {
-    return view('index');
+    $programs = Program::all();
+    return view('index')->with('programs', $programs);
 });
 
 Route::get('test', function() {
