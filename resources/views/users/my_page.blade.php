@@ -15,7 +15,7 @@
     <div class="row">
       @foreach ($following_program as $program)
         <div class="col-md-6">
-          <a href="#" class="item-grid custom-block-my-page">
+          <a href="/programs/{{$program->id}}" class="item-grid custom-block-my-page">
             <div class="image" style="background-image: url({{$program->images}})"></div>
             <div class="v-align">
               <div class="v-align-middle">
