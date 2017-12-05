@@ -6,6 +6,11 @@
 
 @section('content')
 <div class="container">
+  @if(session('alert'))
+    <div class="alert alert-success">
+      {{session('alert')}}
+    </div>
+  @endif
   <div class="row">
     <div class="col-sm-4 custom-padding">
       <center><h1>{{$program->name}}</h1></center>
@@ -42,10 +47,21 @@
             @endif
           </td>
         </tr>
-        
+
         <tr>
           <td>Training time</td>
           <td>{{$program->schedule->count()}} day</td>
+        </tr>
+
+        <tr>
+          <td>Participate</td>
+          <td>
+            @if(Auth::user()->following_program->contains($pcheck))
+              <a href="/programs/{{$pcheck->id}}/users/{{Auth::user()->id}}/participate" type="button" class="btn btn-danger">Cancel Participating</a>
+            @else
+              <a href="/programs/{{$pcheck->id}}/users/{{Auth::user()->id}}/participate" type="button" class="btn btn-success">Participate</a>
+            @endif
+          </td>
         </tr>
       </table>
     </div>

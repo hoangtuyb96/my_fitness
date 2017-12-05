@@ -43,3 +43,4 @@ Route::get('{username}/my_page', 'UsersController@getMyPage');
 Route::post('search', 'SearchController@postSearch');
 Route::get('programs', 'ProgramsController@index');
 Route::get('programs/{id}', 'ProgramsController@show');
+Route::get('programs/{program_id}/users/{user_id}/participate', 'MyProgramsController@create');
