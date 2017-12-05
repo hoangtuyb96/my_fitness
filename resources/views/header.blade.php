@@ -7,7 +7,7 @@
         </div>
         <div class="col-sm-5">
           <div id="custom-search-input">
-            <form action="search" method="post">
+            <form action="/search" method="post">
               <input type="hidden" name="_token" value="{{csrf_token()}}">
               <div class="input-group">
                 <input type="text" class="search-query form-control" placeholder="Search" name="search">
