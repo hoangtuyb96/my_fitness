@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/my_fitness/database/migrations/2017_11_25_165444_create_schedules_table.php</file>
+            <file>file:/C:/xampp/htdocs/my_fitness/database/seeds/MainDatabaseSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/my_fitness/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/my_fitness/database/seeds/DatabaseSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/my_fitness/database/migrations/2017_11_25_165415_create_programs_table.php</file>
+        </group>
+    </open-files>
+</project-private>
