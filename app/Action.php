@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Action extends Model
 {
-    protected $table = "actions";
+  protected $table = 'actions';
 
-    public function schedule(){
-      return $this->belongsTo('App\Schedule', 'schedule_id', 'id');
-    }
+  public function schedule(){
+    return $this->belongsTo('App\Schedule', 'schedule_id', 'id');
+  }
 }

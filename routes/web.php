@@ -14,8 +14,8 @@ use App\User;
 use App\Program;
 
 Route::get('/', function () {
-    $programs = Program::all();
-    return view('index')->with('programs', $programs);
+  $programs = Program::all();
+  return view('index')->with('programs', $programs);
 });
 
 Route::get('login', 'UsersController@getLogin');
