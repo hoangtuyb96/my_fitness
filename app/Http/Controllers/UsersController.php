@@ -55,7 +55,13 @@ class UsersController extends Controller {
     function profile($username) {
         if (Auth::check()) {
             $user = User::where('username', $username)->first();
-            return view('users.profile')->with('user', $user);
+            if (Auth::user()->username == $user->username){
+                return view('users.profile')->with('user', $user);
+            }
+            else
+            {
+                return redirect('')->with('alert', "You don't have a permission to do");
+            }
         }
         return redirect('');
     }
