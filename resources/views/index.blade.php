@@ -5,8 +5,13 @@
 @endsection
 
 @section('content')
+
 <div class="container">
-  
+@if(session('alert'))
+  <div class="alert alert-danger">
+    {{session('alert')}}
+  </div>
+@endif
 </div>
 <aside id="fh5co-hero" class="js-fullheight">
   <div class="flexslider js-fullheight">

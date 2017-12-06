@@ -7,6 +7,11 @@
 @section('content')
 <div id="fh5co-work-section" class="fh5co-light-grey-section">
   <div class="container">
+    @if(session('alert'))
+      <div class="alert alert-danger">
+        {{session('alert')}}
+      </div>
+    @endif
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
         <h2>All Programs</h2>
