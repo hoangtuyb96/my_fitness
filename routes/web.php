@@ -18,20 +18,6 @@ Route::get('/', function () {
     return view('index')->with('programs', $programs);
 });
 
-Route::get('test', function() {
-    $user = User::find(1);
-    foreach ($user->following_program as $key) {
-      echo $key.'<br>';
-    }
-});
-
-Route::get('test1', function() {
-  $program = Program::find(1);
-  foreach ($program->following_user as $key) {
-    echo $key->fullname.'<br>';
-  }
-});
-
 Route::get('login', 'UsersController@getLogin');
 Route::post('login', 'UsersController@postLogin');
 Route::get('signup', 'UsersController@getSignup');
@@ -44,3 +30,5 @@ Route::post('search', 'SearchController@postSearch');
 Route::get('programs', 'ProgramsController@index');
 Route::get('programs/{id}', 'ProgramsController@show');
 Route::get('programs/{program_id}/users/{user_id}/participate', 'MyProgramsController@create');
+Route::post('{username}/list_program','UsersController@postListProgram');
+Route::get('{username}/list_program','UsersController@postListProgram');
