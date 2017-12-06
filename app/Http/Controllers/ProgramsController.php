@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Program;
 
 class ProgramsController extends Controller
@@ -13,13 +14,17 @@ class ProgramsController extends Controller
   }
 
   function show($id){
-    $program = Program::find($id);
-    $pcheck = Program::find($id);
-    $user = $program->user;
-    return view('programs.show')->with([
-      'program' => $program,
-      'user' => $user,
-      'pcheck' => $pcheck
-    ]);
+    if (Auth::check()) {
+      $program = Program::find($id);
+      $pcheck = Program::find($id);
+      $user = $program->user;
+      return view('programs.show')->with([
+        'program' => $program,
+        'user' => $user,
+        'pcheck' => $pcheck
+      ]);
+    }
+    else
+      return redirect()->back()->with('alert', 'You need to login first');
   }
 }
