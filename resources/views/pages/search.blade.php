@@ -8,7 +8,7 @@
 <div id="fh5co-blog-section" class="fh5co-light-grey-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
         <h1><b>Search Result<b></h1>
         <h2>{{$key}}'s Program</h2>
       </div>
