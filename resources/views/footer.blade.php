@@ -9,18 +9,10 @@
     <div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
       <h3>Our Services</h3>
       <ul class="float">
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">Branding &amp; Identity</a></li>
-        <li><a href="#">Free HTML5</a></li>
-        <li><a href="#">HandCrafted Templates</a></li>
+        <li><a href="#">Tư vấn giảm cân</a></li>
+        <li><a href="#">Tư vấn dinh dưỡng</a></li>
+        <li><a href="#">Tu vấn làm đẹp</a></li>
       </ul>
-      <ul class="float">
-        <li><a href="#">Free Bootstrap Template</a></li>
-        <li><a href="#">Free HTML5 Template</a></li>
-        <li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
-        <li><a href="#">HandCrafted Templates</a></li>
-      </ul>
-
     </div>
 
     <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
@@ -34,7 +26,7 @@
     </div>
 
     <div class="col-md-12 fh5co-copyright text-center">
-      <p>&copy; 2016 Free HTML5 template. All Rights Reserved. <span>Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images by <a href="http://unsplash.com/" target="_blank">Unsplash</a></span></p>  
+      <p style="color:white;">&copy; 2017 Trường ĐH Bách Khoa Hà Nội - HEDSPI K59</p>  
     </div>
     
   </div>
